@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.cdnfonts.com/css/tt-ramillas-trl');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Ramillas Trl', sans-serif;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.v-1 {
+  height: auto;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.headings{
+  position:absolute;
+  top:15%;
+  height:40%;
+  width:100vw;
+  padding-left:20%;
+ 
+  padding-right:20%;
+  color:white;
+ 
+}
+.company{
+  font-size: 6vw;;
+  
+}
+.state{
+  position:absolute;
+  right:20%;
+  bottom:0;
+  font-size: 2vw;
+}
+
+.v-1 video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.parent .v-1:nth-child(2){
+  top:-10px;
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  width:40%;
+
+  left:30%;
+  text-align: center;
+  position:absolute;
+  color:white;bottom:4%;
+  gap:12px;
+}
+.title{
+  font-size: 3vw;;
+}
+.content p{
+  font-size: 1.5vw;
+}
+
+.v-1 img{
+  width:100%;
+  height:auto;
+  object-fit: cover;
+}
+
+@media only screen and (min-width:600px){
+  .v-17 img:nth-child(2),.v-17 img:nth-child(3){
+    display:none;
+  }
+  .v-17 img:nth-child(1){
+    display:flex;
+  }
+}
+@media only screen and (max-width:600px){
+  .v-17 img:nth-child(2),.v-17 img:nth-child(3){
+    display:flex;
+  }
+  .v-17 img:nth-child(1){
+    display:none;
+  }
+
+}
+
+
+
+
+
+@media only screen and (min-width:600px){
+  .v-16 img:nth-child(2),.v-16 img:nth-child(3){
+    display:none;
+  }
+  .v-16 img:nth-child(1){
+    display:flex;
+  }
+}
+@media only screen and (max-width:600px){
+  .v-16 img:nth-child(2),.v-16 img:nth-child(3){
+    display:flex;
+  }
+  .v-16 img:nth-child(1){
+    display:none;
+  }
+
+}
+
+
+
+@media only screen and (min-width:600px){
+    .cont{
+      display:none;
+    }
+    .content{
+      display:flex;
+
+    }
+}
+
+@media only screen and (max-width:600px){
+   .cont{
+     display:flex;
+  }
+  .content{
+    display:none;
+      
+    }
+}
